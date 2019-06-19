@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field" package="edu.gudh.hibernatetest.model">
+ <class name="edu.gudh.hibernatetest.model.College" table="T_College">
+  <id column="CollegeID" name="CollegeID" type="string">
+   <generator class="uuid"/>
+  </id>
+  <property column="CollegeName" generated="never" lazy="false"
+   name="CollegeName" type="string"/>
+  <property column="Remark" generated="never" lazy="false" name="Remark" type="text"/>
+ </class>
+</hibernate-mapping>
